@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stud_year = $_POST['stud_year'];
     $stud_gender = $_POST['stud_gender'];
     $stud_age = trim($_POST['stud_age']);
-    $stud_imageurl = "../../images/students/default_image.jpg"; 
+    $stud_imageurl = "images/students/default_image.jpg"; 
 
     $record_height = trim($_POST['record_height']);
     $record_weight = trim($_POST['record_weight']);
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if ($stmt->execute()) {
                 $new_stud_id = $conn->insert_id; 
-                if ($stud_imageurl !== "../../images/students/default_image.jpg") {
+                if ($stud_imageurl !== "images/students/default_image.jpg") {
                     $old_path = "../../" . $stud_imageurl;
                     $new_filename = "student_" . $new_stud_id . "_" . time() . "." . pathinfo($old_path, PATHINFO_EXTENSION);
                     $new_path = "../../images/students/" . $new_filename;
