@@ -88,7 +88,7 @@
       <a href="../user/user_Profile.php" class="text-white text-decoration-none">Profile</a>
       <a href="../user/user_HealthRecord.php" class="text-white text-decoration-none">Health Record</a>
       <a href="../user/user_chatbot.php" class="text-white text-decoration-none">AI Chatbot</a>
-      <a href="/Mediko/main/logout.php" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log out</a>
+      <a href="/Mediko/logout.php" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log out</a>
     </div>
   </header>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

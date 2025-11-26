@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../config/database.php"); 
+include("config/database.php"); 
 $msg_user = '';
 $msg_pass = '';
 $msg_general = '';

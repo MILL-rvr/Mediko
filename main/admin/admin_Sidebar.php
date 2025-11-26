@@ -101,7 +101,7 @@
         <a class="nav-link" href="../admin/admin_Chatbot.php">
             <i class="fas fa-robot"></i> Chatbot Logs
         </a>
-        <a class="nav-link" href="/Mediko/main/logout.php">
+        <a class="nav-link" href="/Mediko/logout.php">
             <i class="fas fa-sign-out-alt"></i> Log out
         </a>
     </nav>
