@@ -11,15 +11,16 @@
 ?> -->
 
 <?php
-$conn = mysqli_connect(
-    getenv('DB_SERVER'),
-    getenv('DB_USERNAME'),
-    getenv('DB_PASSWORD'),
-    getenv('DB_NAME'),
-    getenv('DB_PORT')  
-);
+$host = getenv('DB_HOST') ?: 'localhost';
+$user = getenv('DB_USER') ?: 'root';
+$pass = getenv('DB_PASS') ?: '';
+$db   = getenv('DB_NAME') ?: 'db_project_sia';
+$port = getenv('DB_PORT') ?: 3306;
+
+$conn = mysqli_connect($host, $user, $pass, $db, $port);
 
 if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
 ?>
+
