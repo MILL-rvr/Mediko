@@ -12,11 +12,11 @@
 
 <?php
 $conn = mysqli_connect(
-    getenv('DB_HOST'),
-    getenv('DB_USER'),
-    getenv('DB_PASS'),
+    getenv('DB_SERVER'),
+    getenv('DB_USERNAME'),
+    getenv('DB_PASSWORD'),
     getenv('DB_NAME'),
-    getenv('DB_PORT')  // usually 3306
+    getenv('DB_PORT')  
 );
 
 if (!$conn) {
