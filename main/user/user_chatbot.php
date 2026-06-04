@@ -64,11 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && (!isset($_GET['action']) || $_GET['
     }
 
     $user_message = trim($input['message']);
-
-    // $api_key = "AIzaSyBWkzH2aJoACGJjgq7S3USWDB1UVX010nc"; //**********DO NOT USE**********
-    // $api_key = "AIzaSyCXEdOA7Tggc58_BaWFsgIWYn_7CLd59Hw"; //**********DO NOT USE**********
-    // $api_key = "AIzaSyBqKfV3tyimbfJcUnkt_6YBkqOW-F__J6Q"; //**********DO NOT USE**********
-    $api_key = "AIzaSyAjKhTt-41rfqkuHLqxC6oDURrvR5jlBRU"; //**********DO NOT USE**********
+    // $api_key = NEED NEW API KEY
     $url = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=" . urlencode($api_key);
 
     $system_prompt = "You are Mediko Bot, a healthcare AI assistant who talks like a professional. Only answer questions about healthcare. If someone's condition sounds really bad or serious, tell them to see a doctor right away. Keep it general, but always safe and accurate. If the question isn't about healthcare, say something like 'Hey, I'm all about health stuff, ask me about that, thank you!'";
